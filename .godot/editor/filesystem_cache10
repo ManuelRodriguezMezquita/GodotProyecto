@@ -1,0 +1,12 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1758751257
+icon.svg::CompressedTexture2D/CompressedTexture2D::5839785790329411552::1758557715::1758557721::1::::<><><>0<>0<>b5cb31bd92ae578fe6a78431b04bab22<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://escenas/::1758562989
+lp_sin_animacion.tscn::PackedScene::2300817521487784763::1758561991::0::1::::<><><>0<>0<><>::uid://4x7t2x7y8x5u::::res://resources/LP_SinAnimacion.glb
+main.tscn::PackedScene::8293393195800752202::1758562989::0::1::::<><><>0<>0<><>::uid://bfj05libv1vth::::res://escenas/personaje.tscn
+Personaje2.tscn::PackedScene/PackedScene::6661775166295818419::1758559049::0::1::::<><><>0<>0<><>::uid://4x7t2x7y8x5u::::res://resources/LP_SinAnimacion.glb
+personaje.gd::GDScript::9003170742888640514::1758562830::0::1::::<>CharacterBody3D<><>0<>0<><>::
+personaje.tscn::PackedScene::2757516390495941665::1758562989::0::1::::<><><>0<>0<><>::uid://c16ap1a6pr3kx::::res://escenas/Personaje2.tscn
+::res://resources/::1758561967
+LP_SinAnimacion2.glb::PackedScene/PackedScene::5756024071420464163::1758561732::1758561967::1::::<><><>0<>0<>4e1b81690ca6de375c0847c9034d56ab<>res://.godot/imported/LP_SinAnimacion2.glb-edce1664a488c391713367bc48d7d95e.scn::
+LP_SinAnimacion.glb::PackedScene/PackedScene::2084935482847319604::1758557560::1758558444::1::::<><><>0<>0<>d2347a63ee4280b52cf7788e49062db2<>res://.godot/imported/LP_SinAnimacion.glb-63c036c112f6d7556643c355e7c1ecfa.scn::
