@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dax4haa1klhto"]
+
+[ext_resource type="PackedScene" uid="uid://g054do82f4ga" path="res://assets/PruebaGODOT4.0.glb" id="1_ciotc"]
+
+[node name="PruebaGODOT4_0" instance=ExtResource("1_ciotc")]

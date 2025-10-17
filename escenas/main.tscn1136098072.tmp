@@ -1,0 +1,52 @@
+[gd_scene load_steps=7 format=3 uid="uid://1eevwwxyb2a4"]
+
+[ext_resource type="Script" uid="uid://b3jl8s6awvu7g" path="res://escenas/main.gd" id="1_a8p2b"]
+[ext_resource type="PackedScene" uid="uid://g054do82f4ga" path="res://assets/PruebaGODOT4.0.glb" id="7_o8odp"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_26pgj"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_dkga6"]
+sky_material = SubResource("ProceduralSkyMaterial_26pgj")
+
+[sub_resource type="Environment" id="Environment_a8p2b"]
+background_mode = 2
+sky = SubResource("Sky_dkga6")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_o8odp"]
+
+[node name="main" type="Node3D"]
+script = ExtResource("1_a8p2b")
+
+[node name="XROrigin3D" type="XROrigin3D" parent="."]
+current = true
+
+[node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D"]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 1.5840608, 0)
+current = true
+near = 0.55
+
+[node name="Mano_Izquierda" type="XRController3D" parent="XROrigin3D"]
+tracker = &"/user/hand_tracker/left"
+
+[node name="Mano_Derecha" type="XRController3D" parent="XROrigin3D"]
+tracker = &"/user/hand_tracker/right"
+
+[node name="PruebaGODOT4_0" parent="XROrigin3D" instance=ExtResource("7_o8odp")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_a8p2b")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="."]
+transform = Transform3D(10.932473, 0, 0, 0, 0.33917028, 0, 0, 0, 8.94616, 0, -1.1483806, 0)
+use_collision = true
+mesh = SubResource("BoxMesh_o8odp")
+
+[editable path="XROrigin3D/PruebaGODOT4_0"]
